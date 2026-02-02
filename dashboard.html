@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>Student Dashboard</h2>
+  <span id="welcome"></span>
+</header>
+
+<div class="container">
+  <div class="box">
+    <h3>Upload Credential</h3>
+    <input type="file">
+    <button onclick="addCredential()">Upload</button>
+  </div>
+
+  <div class="box">
+    <h3>Stored Credentials (Blockchain)</h3>
+    <ul id="credList"></ul>
+  </div>
+
+  <div class="box">
+    <h3>AI Insights</h3>
+    <p id="aiResult">No analysis yet</p>
+    <button onclick="runAI()">Run AI Check</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
